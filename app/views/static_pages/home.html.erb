@@ -1,13 +1,13 @@
-<% provide(:title, "Home") %>
+<% provide(:title, t("home.home")) %>
  <div class="center jumbotron">
    <h1>トライアルアプリケーション</h1>
 
-  <h1>Ruby on Rails Trail App</h1>
+  <h1><%= t "home.ruby_on_rails_trail_app" %></h1>
   <h2>
-    This is the home page for the
-    <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-    sample application.
+    <%= t "home.this_is_the_home_page" %>
+    <a href="https://www.railstutorial.org/"><%= t "home.ruby_on_rails_tutorial" %></a>
+    <%= t "home.sample_application" %>
   </h2>
-  <%= link_to "Sign up", signup_path, class: "btn btn-lg btn-primary" %>
-  <img alt="Rails logo" src="/assets/rails.png" />
+  <%= link_to t("home.signup"), signup_path, class: "btn btn-lg btn-primary" %>
+  <img alt=t("home.rails_logo") src="/assets/rails.png" />
  </div>
