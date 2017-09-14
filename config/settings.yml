@@ -4,6 +4,7 @@ user:
   name_length: 50
   email_length: 255
   pass_minimum: 1
+  avatar_size: 80
 micropost:
   tittle_length:  144
   content_length:  1440
