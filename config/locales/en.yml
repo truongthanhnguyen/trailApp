@@ -1,5 +1,7 @@
 en:
   hello: "Hello world"
+  error:
+    the_form_contain: "The form contains"
   home:
     Home: "Home"
     signup: "Sign up"
@@ -9,3 +11,5 @@ en:
     ruby_on_rails_tutorial: "Ruby on Rails Tutorial"
     sample_application: "sample application."
     rails_logo: "Rails logo"
+    create_account: "Create my account"
+    wellcome: "Wellcome to Thanh's Trail App"
