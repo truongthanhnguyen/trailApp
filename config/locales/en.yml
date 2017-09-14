@@ -13,3 +13,13 @@ en:
     rails_logo: "Rails logo"
     create_account: "Create my account"
     wellcome: "Wellcome to Thanh's Trail App"
+    log_in: "Log in"
+    new_user?: "New user?"
+    sign_up_now: "Sign up now!"
+    users: "Users"
+  user:
+    profile: "Profile"
+    settings: "Settings"
+    account: "Account"
+    log_in: "Log in"
+    log_out: "Log out"
