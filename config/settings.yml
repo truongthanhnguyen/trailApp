@@ -6,5 +6,6 @@ user:
   pass_minimum: 1
   avatar_size: 50
 micropost:
-  tittle_length:  144
+  title_length:  144
   content_length:  1440
+  picture_size: 5
