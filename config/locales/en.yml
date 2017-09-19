@@ -44,4 +44,21 @@ en:
     confirmation: "confirmation"
     can't_be_empty: "can't be empty"
     pass_has_been_reset: "Password has been reset"
+  micropost:
+    posted: "Posted "
+    ago: " ago."
+    micropost: "micropost"
+    microposts: "Microposts"
+    view_my_profile: "view my profile"
+    compose: "Compose new micropost..."
+    post: "Post"
+    title: "title"
+    micropost_feed: "Micropost Feed"
+    delete: "delete"
+    you_sure: "You sure?"
+    micropost_deleted: "Micropost deleted"
+    micropost_created: "Micropost created"
+    picture_should_be_less: "should be less than 5MB"
+
+
 

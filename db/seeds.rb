@@ -22,3 +22,10 @@ User.create!(name: "tiensistorm", email: "tiensistorm@gmail.com",
     activated: true,
     activated_at: Time.zone.now )
 end
+
+users = User.order(:created_at).take(6)
+10.times do
+  title = Faker::Lorem.sentence(1)
+  content = Faker::Lorem.sentence(5)
+  users.each { |user| user.microposts.create!(title: title, content: content)}
+end
