@@ -5,6 +5,7 @@ user:
   email_length: 255
   pass_minimum: 1
   avatar_size: 50
+  per_page: 10
 micropost:
   title_length:  144
   content_length:  1440
