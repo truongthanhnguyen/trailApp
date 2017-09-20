@@ -44,11 +44,14 @@ en:
     confirmation: "confirmation"
     can't_be_empty: "can't be empty"
     pass_has_been_reset: "Password has been reset"
+    following: "following"
+    followers: "followers"
   micropost:
     posted: "Posted "
     ago: " ago."
     micropost: "micropost"
     microposts: "Microposts"
+    micropost2: "Microposts:"
     view_my_profile: "view my profile"
     compose: "Compose new micropost..."
     post: "Post"
@@ -59,6 +62,9 @@ en:
     micropost_deleted: "Micropost deleted"
     micropost_created: "Micropost created"
     picture_should_be_less: "should be less than 5MB"
+  relationship: 
+    follow: "Follow"
+    unfollow: "Unfollow"
 
 
 
