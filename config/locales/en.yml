@@ -62,9 +62,19 @@ en:
     micropost_deleted: "Micropost deleted"
     micropost_created: "Micropost created"
     picture_should_be_less: "should be less than 5MB"
+    all_entries: "All entries"
+    read_more: "read more"
+    by: "by"
+    leave_comment: "Leave comment"
+    compose_new_comment: "Compose new comment..."
+    submit: "Submit"
   relationship: 
     follow: "Follow"
     unfollow: "Unfollow"
+  comment:
+    comment_created: "comment created"
+    follow_to_comment: "follow to comment"
+
 
 
 
