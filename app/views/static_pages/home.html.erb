@@ -13,7 +13,7 @@
       </section>
     </aside>
     <div class="col-md-8">
-      <h3><%= t "micropost.micropost_feed" %></h3>
+      <h3><%= link_to t("micropost.micropost_feed"), microposts_path %></h3>
       <%= render "shared/feed" %>
     </div>
   </div>
