@@ -61,6 +61,7 @@ class User < ApplicationRecord
 
   # Sends activation email.
   def send_activation_email
+    binding.pry
     UserMailer.account_activation(self).deliver_now
   end
 

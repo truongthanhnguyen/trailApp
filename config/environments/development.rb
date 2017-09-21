@@ -41,10 +41,23 @@ Rails.application.configure do
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
 
+  # config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.delivery_method = :test
+  # host = "localhost:3000" 
+  # config.action_mailer.default_url_options = {host: host}
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.delivery_method = :test
-  host = "localhost:3000" 
+  config.action_mailer.delivery_method = :smtp
+  host = "localhost"
   config.action_mailer.default_url_options = {host: host}
+  ActionMailer::Base.smtp_settings = {
+    :address        => "smtp.sendgrid.net",
+    :port           => "25",
+    :authentication => :plain,
+    :user_name      => "truongthanh1010",
+    :password       => "phuong1992",
+    :domain         => "heroku.com",
+    :enable_starttls_auto => true
+  }
 
   config.active_support.deprecation = :log
   config.active_record.migration_error = :page_load
@@ -53,3 +66,4 @@ Rails.application.configure do
   config.assets.raise_runtime_errors = true
 
 end
+
