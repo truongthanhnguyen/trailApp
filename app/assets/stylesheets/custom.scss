@@ -1,5 +1,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import 'font-awesome';
 
 /* mixins, variables, etc. */
 
@@ -255,7 +256,7 @@ input {
   }
   .content {
     display: block;
-    margin-left: 10px;
+    margin-left: 0px;
     img {
       display: block;
       padding: 5px 0;
@@ -264,7 +265,7 @@ input {
   .timestamp {
     color: $gray-light;
     display: block;
-    margin-left: 60px;
+    margin-left: 10px;
   }
   .gravatar {
     float: left;
@@ -286,6 +287,3 @@ span.picture {
     border: 0;
   }
 }
-
-
-

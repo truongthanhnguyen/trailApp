@@ -5,11 +5,11 @@
       <%= link_to micropost.title, micropost %>
     </h1>
     <p class="lead">
-      by<%= link_to micropost.user.name, micropost.user %>
+       <%= t "micropost.by" %><%= link_to micropost.user.name, micropost.user %>
     </p>
     <p>
       <span class="glyphicon glyphicon-time"></span>
-      Posted<%= time_ago_in_words(micropost.created_at) %>ago.
+      <%= t "micropost.posted" %><%= time_ago_in_words(micropost.created_at) %><%= t "micropost.ago" %>
       <!-- <p><%= micropost.content %></p> -->
       <span class="content">
         <p class="lead"><%= micropost.content %></p>
