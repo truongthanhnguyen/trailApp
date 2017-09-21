@@ -12,6 +12,9 @@
       <%= image_tag @micropost.picture.url if @micropost.picture? %>
     </span>
     <hr>
+    <span class="like">
+      <%= render "likes/like_form", micropost: @micropost %>
+    </span>
     <div class="well" id="well">
       <h4><%= t "micropost.leave_comment" %></h4>
       <%= form_for @comment, :url => micropost_comments_path(@micropost) do |f| %>

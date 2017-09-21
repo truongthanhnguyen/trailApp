@@ -64,7 +64,7 @@ en:
     picture_should_be_less: "should be less than 5MB"
     all_entries: "All entries"
     read_more: "read more"
-    by: "by"
+    by: "by "
     leave_comment: "Leave comment"
     compose_new_comment: "Compose new comment..."
     submit: "Submit"

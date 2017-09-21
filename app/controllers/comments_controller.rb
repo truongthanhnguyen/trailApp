@@ -34,8 +34,8 @@ class CommentsController < ApplicationController
     if current_user != @micropost.user
       following_ids = current_user.active_relationships.pluck(:followed_id)
       if !following_ids.include? @micropost.user.id
-      flash[:danger] = t "comment.follow_to_comment"
-      redirect_to :back
+        flash[:danger] = t "comment.follow_to_comment"
+        redirect_back fallback_location: micropost_path(@micropost)
       end      
     end
   end
