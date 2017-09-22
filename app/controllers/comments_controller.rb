@@ -3,6 +3,23 @@ class CommentsController < ApplicationController
   before_action :get_micropost, only: [:create]
   before_action :check_follow, only: [:create]
 
+  def edit
+    
+  end
+
+  def update
+    if @comment.update_attributes comment_params
+      respond_to do |format|
+        flash[:success] = "success update"
+        format.html{redirect_to @comment.micropost}
+        format.js
+      end
+    else
+      flash[:danger] = "cannot update"
+      redirect_to @comment.micropost
+    end
+  end
+
   def create
     @comment = current_user.comments.build(comment_params)
     @comment.micropost = Micropost.find(params[:micropost_id])
@@ -13,6 +30,19 @@ class CommentsController < ApplicationController
     else
       @comments = @micropost.comments.includes(:user)
       render "micropost/show"
+    end
+  end
+
+  def destroy
+    if @comment.destroy
+      respond_to do |format|
+        flash[:success] = "comment has been destroyed"
+        format.html{redirect_to @comment.micropost}
+        format.js
+      end
+    else
+      flash[:danger] = "cannot delete"
+      redirect_to @commnet.micropost
     end
   end
 

@@ -5,7 +5,12 @@
       <%= t "micropost.by" %><%= link_to @micropost.user.name, @micropost.user %>
     </p>
     <hr>
-    <p><span class="glyphicon glyphicon-time"></span><%= t "micropost.posted" %><%= time_ago_in_words(@micropost.created_at) %><%= t "micropost.ago" %> </p>
+    <p>
+      <span class="glyphicon glyphicon-time"></span>
+      <%= t "micropost.posted" %>
+      <%= time_ago_in_words(@micropost.created_at) %>
+      <%= t "micropost.ago" %>
+    </p>
     <hr>
     <span class="content">
       <p class="lead"><%= @micropost.content %></p>
@@ -32,6 +37,16 @@
             <small><%= comment.created_at %></small>
           </h4>
           <%= comment.content %>
+          <% if current_user.current_user?(comment.user) %>
+            <%= link_to edit_micropost_comment_path(micropost, comment), remote: true do %>
+              <i class="fa fa-pencil-square-o"></i>
+              edit
+            <% end %>
+            <%= link_to micropost_comment_path(micropost, comment), method: :delete, remote: true do %>
+              <i class="fa fa-trash-o"></i>
+              delete
+            <% end %>
+          <% end %>
         </div>
       </div>
     <% end %>
