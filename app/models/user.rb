@@ -62,7 +62,7 @@ class User < ApplicationRecord
   # Sends activation email.
   def send_activation_email
     # binding.pry
-    Comment.create! user_id: 1, micropost_id: 1, content: UserMailer.account_activation(self).deliver_now 
+    # Comment.create! user_id: 1, micropost_id: 1, content: UserMailer.account_activation(self).deliver_now 
     UserMailer.account_activation(self).deliver_now
   end
 
